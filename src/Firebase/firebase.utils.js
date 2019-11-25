@@ -2,15 +2,21 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-const Config = {
-  apiKey: "AIzaSyA7Zk0d-jyuBGkinHOlBBm4mS4jAb0gjXQ",
-  authDomain: "netflix-clone-by-shivam.firebaseapp.com",
-  databaseURL: "https://netflix-clone-by-shivam.firebaseio.com",
-  projectId: "netflix-clone-by-shivam",
-  storageBucket: "",
-  messagingSenderId: "889922598558",
-  appId: "1:889922598558:web:7ca925df16da432c"
-};
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyADZgB4WXGhnWn8dog926H4i7xDxz5TXWk",
+    authDomain: "project-with-db.firebaseapp.com",
+    databaseURL: "https://project-with-db.firebaseio.com",
+    projectId: "project-with-db",
+    storageBucket: "project-with-db.appspot.com",
+    messagingSenderId: "37373940583",
+    appId: "1:37373940583:web:f99b76406e3444e3a495c2",
+    measurementId: "G-KXBVTYDM7H"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
 export const CreateUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
