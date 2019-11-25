@@ -16,10 +16,7 @@ const Footer = () => {
             onSnapReverse={() => console.log("Avengers assemble!")}
           />
 
-          <h1
-            className="footer__text footer__text--1"
-            //onClick={() => window.open(`https://shivamaima.com/`, "_blank")}
-          >
+          <h1 className="footer__text footer__text--1">
             By <span className="footer__link">Illyha</span>
           </h1>
         </div>
@@ -47,7 +44,7 @@ const Footer = () => {
         <div
           className="footer__end"
           onClick={() =>
-            window.open(`https://github.com/darwin619/Netflix-Clone`, "_blank")
+            window.open(`https://github.com/Illyha/Best-Netflix-`, "_blank")
           }
         >
           <img src={github} alt="github" className="footer__logo-github" />
