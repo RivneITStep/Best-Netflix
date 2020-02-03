@@ -9,11 +9,9 @@ class ItemPageCast extends React.Component {
       didLoad: false
     };
   }
-
   onLoad = () => {
     this.setState({ didLoad: true });
   };
-
   render() {
     const { profile_path, name } = this.props;
     const profileUrl = `${IMAGE_BASE_URL}${PROFILE_SIZE}`;
