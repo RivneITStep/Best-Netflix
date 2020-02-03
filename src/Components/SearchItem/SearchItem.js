@@ -28,8 +28,7 @@ const SearchItem = ({ item, history, ListItems }) => {
         className="search-item__img-box"
         onClick={() => {
           return title
-            ? history.push({ pathname: `/movies/${titlePath}`, state: { id } })
-            : history.push({ pathname: `/tvshows/${namePath}`, state: { id } });
+            ? history.push({ pathname: `/movies/${titlePath}`, state: { id } }) : history.push({ pathname: `/tvshows/${namePath}`, state: { id } });
         }}
       >
         <img
