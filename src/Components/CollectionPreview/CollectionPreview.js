@@ -5,10 +5,7 @@ import CollectionItem from "../CollectionItem/CollectionItem";
 import { connect } from "react-redux";
 import { selectMovieItems } from "../../Redux/Movie/movie-selectors";
 import { selectTVItems } from "../../Redux/TVShow/tv-selectors";
-import {
-  faChevronLeft,
-  faChevronRight
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft,faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TitleHide } from "../../Utils/TitleHide";
 import { LeftArrow, RightArrow } from "../../Utils/ScrollArrows";
