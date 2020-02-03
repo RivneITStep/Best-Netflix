@@ -1,8 +1,5 @@
 import MovieActionTypes from "./movie-types";
-import {
-  fetchData,
-  fetchAdditionalMovieData
-} from "../../Services/MovieService";
+import { fetchData,fetchAdditionalMovieData } from "../../Services/MovieService";
 import { fetchGrid } from "../../Services/MovieGridService";
 
 export const getMoviesSuccess = () => ({
