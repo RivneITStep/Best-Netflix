@@ -10,8 +10,7 @@ const ListOverview = ({ listItems, currentUser }) => {
     <div className="list-overview">
       <h1 className="list-overview__title">
         {currentUser
-          ? `${currentUser.displayName}'s List (${listItems.length})`
-          : "Sign in to view your list"}
+          ? `${currentUser.displayName}'s List (${listItems.length})` : "Sign in to view your list"}
       </h1>
       <div className="list-overview__outer">
         {currentUser ? (
