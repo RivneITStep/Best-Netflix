@@ -1,10 +1,7 @@
 import React, { Suspense, /*lazy*/ } from "react";
 import "./Movies.scss";
 import { connect } from "react-redux";
-import {
-  selectMovieItems,
-  selectIsMovieFetching
-} from "../../Redux/Movie/movie-selectors";
+import { selectMovieItems,selectIsMovieFetching } from "../../Redux/Movie/movie-selectors";
 import { getMovies } from "../../Redux/Movie/movie-actions";
 
 const CollectionGridMovie = React.lazy(() => import("../../Components/CollectionGrid/CollectionGridMovie"));
