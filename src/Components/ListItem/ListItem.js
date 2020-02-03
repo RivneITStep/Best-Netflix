@@ -11,8 +11,7 @@ import { removeItem } from "../../Redux/List/list-actions";
 import { connect } from "react-redux";
 import { compose } from "redux";
 
-const ListItem = ({ item, history, removeItem }) => {
-  const { id, title, poster_path, vote_average, name } = item;
+const ListItem = ({ item, history, removeItem }) => { const { id, title, poster_path, vote_average, name } = item;
   var titlePath = title ? FixString(title) : null;
   var namePath = name ? FixString(name) : null;
   return (
