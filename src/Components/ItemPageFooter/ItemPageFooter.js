@@ -1,10 +1,7 @@
 import React from "react";
 import "./ItemPageFooter.scss";
 import { connect } from "react-redux";
-import {
-  selectMovieCast,
-  selectMovieVideos
-} from "../../Redux/Movie/movie-selectors";
+import { selectMovieCast,selectMovieVideos } from "../../Redux/Movie/movie-selectors";
 import { selectTVCast, selectTVVideos } from "../../Redux/TVShow/tv-selectors";
 import { faPlay, faPlus, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
