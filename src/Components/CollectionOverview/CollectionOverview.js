@@ -18,7 +18,6 @@ const CollectionOverview = ({ movies, tvshow, collection }) => (
     ))}
   </div>
 );
-
 const mapStateToProps = state => ({
   collection: selectCollectionData(state)
 });
