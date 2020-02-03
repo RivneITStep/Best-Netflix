@@ -3,10 +3,7 @@ import ReactDOM from "react-dom";
 import "./MovieItemPage.scss";
 import { connect } from "react-redux";
 import ItemPageOverviewContainer from "../../Components/ItemPageOverview/ItemPageOverviewContainer";
-import {
-  selectMovieItems,
-  selectIsMovieFetching
-} from "../../Redux/Movie/movie-selectors";
+import { selectMovieItems,selectIsMovieFetching } from "../../Redux/Movie/movie-selectors";
 import { getMovies } from "../../Redux/Movie/movie-actions";
 
 class MovieItemPage extends React.Component {
