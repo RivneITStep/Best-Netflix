@@ -66,7 +66,6 @@ const ItemPageFooter = ({
             My List
           </button>
         )}
-
         <button
           onClick={() => {
             return movies
@@ -82,7 +81,6 @@ const ItemPageFooter = ({
     </div>
   );
 };
-
 const mapDispatchToProps = dispatch => ({
   addItem: item => dispatch(addItem(item)),
   removeItem: item => dispatch(removeItem(item))
