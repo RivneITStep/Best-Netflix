@@ -17,9 +17,7 @@ class SearchBar extends React.Component {
   handleChange = event => {
     const { value } = event.target;
     if (
-      Number(value.length) === 1 &&
-      this.props.currentRoute !== "/searchresults"
-    ) {
+      Number(value.length) === 1 && this.props.currentRoute !== "/searchresults") {
       this.setState({ currentPath: this.props.currentRoute }, () =>
         this.props.history.push("/searchresults")
       );
