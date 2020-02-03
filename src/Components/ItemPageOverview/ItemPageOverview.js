@@ -22,29 +22,25 @@ const ItemPageOverview = ({movieItemByTitle,tvItemByTitle,movies,tvshow,searched
 			}
 			{
 				movieItemByTitle.length === 0
-				 ? (searchedMovieItemByTitle
-				 ? (searchedMovieItemByTitle.map(item => <ItemPage key={item.id} item={item} movies={movies} />))
+				 ? (searchedMovieItemByTitle  ? (searchedMovieItemByTitle.map(item => <ItemPage key={item.id} item={item} movies={movies} />))
 				 : null)
 				 : null
 			}
 			{
 				tvItemByTitle.length === 0
-				? (searchedTvItemByTitle
-				? (searchedTvItemByTitle.map(item => <ItemPage key={item.id} item={item} tvshow={tvshow} />))
+				? (searchedTvItemByTitle	? (searchedTvItemByTitle.map(item => <ItemPage key={item.id} item={item} tvshow={tvshow} />))
 				: null)
 				: null
 			}
 			{
 				(movieItemByTitle.length === 0) && (searchedMovieItemByTitle.length === 0)
-				 ? (listMovieItemByTitle
-				 ? (listMovieItemByTitle.map(item => <ItemPage key={item.id} item={item} movies={movies} />))
+				 ? (listMovieItemByTitle  ? (listMovieItemByTitle.map(item => <ItemPage key={item.id} item={item} movies={movies} />))
 				 : null)
 				 : null
 			}
 			{
 				(tvItemByTitle.length === 0) && (searchedTvItemByTitle.length === 0)
-				? (listTvItemByTitle
-				? (listTvItemByTitle.map(item => <ItemPage key={item.id} item={item} tvshow={tvshow} />))
+				? (listTvItemByTitle	? (listTvItemByTitle.map(item => <ItemPage key={item.id} item={item} tvshow={tvshow} />))
 				: null)
 				: null
 			}
