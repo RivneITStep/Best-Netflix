@@ -12,7 +12,7 @@ import "firebase/auth";
     appId: "1:37373940583:web:f99b76406e3444e3a495c2",
     measurementId: "G-KXBVTYDM7H"
   };
-
+  
 export const CreateUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
