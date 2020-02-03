@@ -5,10 +5,7 @@ import "./Header.scss";
 import { withRouter } from "react-router";
 import SearchBar from "../SearchBar/SearchBar";
 import { auth } from "../../Firebase/firebase.utils";
-import {
-  selectCurrentUser,
-  selectToggleHidden
-} from "../../Redux/User/user-selectors";
+import { selectCurrentUser,selectToggleHidden } from "../../Redux/User/user-selectors";
 import { ToggleMenuHidden } from "../../Redux/User/user-actions";
 import { connect } from "react-redux";
 import { compose } from "redux";
