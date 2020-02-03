@@ -3,7 +3,7 @@ import { IMAGE_BASE_URL, BACKDROP_SIZE } from "../../Config/config";
 import "./CollectionGridItem.scss";
 import AddToList from "../AddToList/AddToList";
 
-const CollectionGridItem = ({ item, listItems, addItem }) => {
+const CollectionGridItem = ({ item }) => {
   const { title, overview, backdrop_path, poster_path, name } = item;
   return (
     <div className="grid-item">
