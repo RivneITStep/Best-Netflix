@@ -4,10 +4,7 @@ import CollectionGridItem from "../CollectionGridItem/CollectionGridItem";
 import { connect } from "react-redux";
 import { selectMovieGridItems } from "../../Redux/Movie/movie-selectors";
 import { selectTVGridItems } from "../../Redux/TVShow/tv-selectors";
-import {
-  faChevronLeft,
-  faChevronRight
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft,faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { LeftGridArrow, RightGridArrow } from "../../Utils/GridScrollArrows";
 
